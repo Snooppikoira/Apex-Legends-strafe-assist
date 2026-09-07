@@ -8,7 +8,7 @@ static HHOOK g_keyHook   = NULL;
 static volatile BOOL g_assistEnabled = FALSE;
 static volatile BOOL g_backHeld      = FALSE;
 static volatile BOOL g_spam          = FALSE;
-static volatile BOOL g_cDown         = FALSE; 
+static volatile BOOL g_cDown         = FALSE;
 
 #define SPAM_DELAY_MS 1
 #define SC_SPACE 0x39
@@ -103,7 +103,7 @@ static void draw_ui(){
     clear_screen();
 
     set_color(FOREGROUND_GREEN|FOREGROUND_INTENSITY);
-    printf("united Strafe\n");
+    printf("MethodStrafe\n");
     set_color(g_defaultAttr);
     printf("------------------\n");
 
@@ -158,6 +158,7 @@ static LRESULT CALLBACK key_proc(int nCode, WPARAM wParam, LPARAM lParam){
 }
 
 int main(void){
+    SetConsoleTitleA("MethodStrafe");
     g_console = GetStdHandle(STD_OUTPUT_HANDLE);
     CONSOLE_SCREEN_BUFFER_INFO csbi;
     if (GetConsoleScreenBufferInfo(g_console,&csbi)) g_defaultAttr = csbi.wAttributes;

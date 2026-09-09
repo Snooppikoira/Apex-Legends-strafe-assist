@@ -18,3 +18,4 @@ Steps:
 
 Output:
 `bin/MethodStrafe.exe`
+<img width="1110" height="629" alt="image" src="https://github.com/user-attachments/assets/b1096aad-579f-4c37-b28f-6de9cc4484fa" />
